@@ -1,37 +1,18 @@
 {
-    "name": "trolley/core",
+    "name": "tengiva/trolley-php-sdk-8.1",
+    "description": "Trolley PHP SDK with a fix for php 8.1",
     "type": "library",
-    "description": "Trolley PHP SDK",
-    "homepage": "https://github.com/Trolley/php-sdk",
-    "keywords": [
-        "PaymentRails",
-        "Trolley"
-    ],
     "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tengiva\\TrolleyPhpSdk81\\": "src/"
+        }
+    },
     "authors": [
         {
-            "name": "Trolley",
-            "homepage": "https://www.trolley.com"
+            "name": "Louis-Philippe Musto"
         }
     ],
-    "require": {
-        "php": ">=5.4",
-        "ext-curl": "*",
-        "ext-json": "*",
-        "ext-mbstring": "*",
-        "ext-openssl": "*",
-        "vlucas/phpdotenv": "^5.5"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "5.7.*",
-        "ramsey/uuid": "*"
-    },
-    "autoload": {
-        "psr-0": {
-            "Trolley": "lib/"
-        },
-        "psr-4": {
-            "Trolley\\": "lib/Trolley"
-        }
-    }
+    "minimum-stability": "stable",
+    "require": {}
 }
